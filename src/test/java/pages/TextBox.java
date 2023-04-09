@@ -6,29 +6,32 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
+import java.time.Duration;
+
 public class TextBox {
-    private WebDriver driver;
-    private SoftAssert softAssert;
-    private WebDriverWait webDriverWait;
+    static WebDriver driver;
+    static SoftAssert softAssert;
+    public WebDriverWait webDriverWait;
 
-    private String fullName = "Test";
-    private String email = "test@deneme.com";
-    private String currentAddress = "Test, Test/Deneme";
+    static String fullName = "Test";
+    static String email = "test@deneme.com";
+    static String currentAddress = "Test, Test/Deneme";
 
-    private By homePage = By.xpath("//div[@class='category-cards']");
-    private By elementsButton = By.xpath("//h5[text()='Elements']");
-    private By textBoxButton = By.xpath("//span[text()='Text Box']");
-    private By fullNameLabel = By.id("userName");
-    private By emailLabel = By.id("userEmail");
-    private By currentAddressLabel = By.id("currentAddress");
-    private By submitButton = By.id("submit");
+    static By homePage = By.xpath("//div[@class='category-cards']");
+    static By elementsButton = By.xpath("//h5[text()='Elements']");
+    static By textBoxButton = By.xpath("//span[text()='Text Box']");
+    static By fullNameLabel = By.id("userName");
+    static By emailLabel = By.id("userEmail");
+    static By currentAddressLabel = By.id("currentAddress");
+    static By submitButton = By.id("submit");
 
-    private By actualResultName = By.id("name");
-    private By actualResultEmail = By.id("email");
-    private By actualResultAddress = By.xpath("//p[@id='currentAddress']");
+    static By actualResultName = By.id("name");
+    static By actualResultEmail = By.id("email");
+    static By actualResultAddress = By.xpath("//p[@id='currentAddress']");
 
     public TextBox(WebDriver driver) {
         this.driver = driver;
+        this.webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     public void homePage() {
         webDriverWait.until(ExpectedConditions.presenceOfElementLocated(homePage));

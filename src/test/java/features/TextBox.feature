@@ -3,10 +3,8 @@ Feature: TextBox
   I want to submit information form
   So that I can write my information
 
-  Background:
-    Given I am on the demoqa home page
-
   Scenario: Submit to information of user
+    Given I am on the demoqa home page
     When user click elements page
     And user click text box page
     And user write full name

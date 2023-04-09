@@ -2,7 +2,6 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -10,8 +9,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 public class DriverUtils {
-    private static WebDriver driver;
-    private static Properties properties;
+    static WebDriver driver;
+    static Properties properties;
 
     public static WebDriver initialize_Driver() {
         properties = ConfigReader.getProperties();
