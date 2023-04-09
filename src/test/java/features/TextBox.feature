@@ -5,7 +5,7 @@ Feature: TextBox
 
   Scenario: Submit to information of user
     Given I am on the demoqa home page
-    When user click elements page
+    And user click elements page
     And user click text box page
     And user write full name
     And user write email
