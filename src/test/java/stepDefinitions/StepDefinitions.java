@@ -7,10 +7,11 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.TextBox;
+import utils.DriverUtils;
 
 public class StepDefinitions {
-    private WebDriver driver;
-    private TextBox textBox;
+    WebDriver driver = DriverUtils.getDriver();
+    TextBox textBox = new TextBox(driver) ;
 
     @Given("I am on the demoqa home page")
     public void iAmOnTheDemoqaHomePage() {
