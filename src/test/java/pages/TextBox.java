@@ -2,16 +2,20 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
 
 public class TextBox {
     private WebDriver driver;
     private SoftAssert softAssert;
+    private WebDriverWait webDriverWait;
 
     private String fullName = "Test";
     private String email = "test@deneme.com";
     private String currentAddress = "Test, Test/Deneme";
 
+    private By homePage = By.xpath("//div[@class='category-cards']");
     private By elementsButton = By.xpath("//h5[text()='Elements']");
     private By textBoxButton = By.xpath("//span[text()='Text Box']");
     private By fullNameLabel = By.id("userName");
@@ -25,6 +29,11 @@ public class TextBox {
 
     public TextBox(WebDriver driver) {
         this.driver = driver;
+    }
+    public void homePage() {
+        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(homePage));
+        softAssert.assertTrue(driver.findElement(homePage).isDisplayed());
+        System.out.println("User At Home Page");
     }
     public void clickElements(){
         driver.findElement(elementsButton).click();

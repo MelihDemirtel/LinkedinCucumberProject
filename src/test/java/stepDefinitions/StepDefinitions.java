@@ -5,7 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import pages.TextBox;
 import utils.DriverUtils;
 
@@ -15,9 +14,7 @@ public class StepDefinitions {
 
     @Given("I am on the demoqa home page")
     public void iAmOnTheDemoqaHomePage() {
-        driver = new ChromeDriver();
-        driver.get("https://demoqa.com");
-        textBox = new TextBox(driver);
+        textBox.homePage();
     }
 
     @When("user click elements page")
