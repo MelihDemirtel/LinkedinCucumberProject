@@ -1,3 +1,5 @@
+@CheckBox
+@Smoke
 Feature: CheckBox
   As a user
   I want to click check boxes
@@ -8,4 +10,4 @@ Feature: CheckBox
     And user click elements page
     And user click check box page
     And user click home check box
-    Then user check information
+    Then user checked boxes

@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class TextBox extends TextBoxWebElements{
+public class TextBox extends WebElements {
     static WebDriver driver;
     static WebDriverWait wait;
     static JavascriptExecutor jsx;

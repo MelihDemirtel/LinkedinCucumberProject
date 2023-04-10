@@ -8,7 +8,7 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
-public class CheckBox extends CheckBoxWebElements{
+public class CheckBox extends WebElements{
     static WebDriver driver;
     static WebDriverWait wait;
     static JavascriptExecutor jsx;
@@ -25,19 +25,19 @@ public class CheckBox extends CheckBoxWebElements{
     }
 
     public void clickElements(){
-       elementsButton.click();
+        driver.findElement(elementsButton).click();
     }
 
     public void clickCheckBox(){
-        checkBoxButton.click();
+        driver.findElement(checkBoxButton).click();
     }
 
     public void clickHomeCheckBox(){
-        homeCheckBoxButton.click();
+        driver.findElement(homeCheckBoxButton).click();
     }
 
     public void assertInfo(){
-        Assert.assertTrue(actualResult.isDisplayed());
-        System.out.println(actualResult.getText());
+        Assert.assertTrue(driver.findElement(actualResult).isDisplayed());
+        System.out.println(driver.findElement(actualResult).getText());
     }
 }

@@ -1,3 +1,5 @@
+@TextBox
+@Smoke
 Feature: TextBox
   As a user
   I want to submit information form

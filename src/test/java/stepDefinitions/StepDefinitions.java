@@ -5,12 +5,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
+import pages.CheckBox;
 import pages.TextBox;
 import utils.DriverUtils;
 
 public class StepDefinitions {
     WebDriver driver = DriverUtils.getDriver();
     TextBox textBox = new TextBox(driver) ;
+    CheckBox checkBox = new CheckBox(driver);
 
     @Given("I am on the demoqa home page")
     public void iAmOnTheDemoqaHomePage() {
@@ -50,5 +52,18 @@ public class StepDefinitions {
     @Then("user check information")
     public void userCheckInformation() {
         textBox.assertInfo();
+    }
+
+    @And("user click check box page")
+    public void userClickCheckBoxPage() { checkBox.clickCheckBox();
+    }
+
+    @And("user click home check box")
+    public void userClickHomeCheckBox() { checkBox.clickHomeCheckBox();
+    }
+
+    @Then("user checked boxes")
+    public void userCheckedBoxes() {
+        checkBox.assertInfo();
     }
 }
