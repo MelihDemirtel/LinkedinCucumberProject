@@ -1,17 +1,12 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pages.TextBox;
-import utils.ConfigReader;
 import utils.DriverUtils;
-
-import java.util.Properties;
 
 public class StepDefinitions {
     WebDriver driver = DriverUtils.getDriver();

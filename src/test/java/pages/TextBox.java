@@ -1,21 +1,16 @@
 package pages;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
-import utils.ConfigReader;
-import utils.DriverUtils;
 
 import java.time.Duration;
-import java.util.Properties;
 
 public class TextBox {
     static WebDriver driver;
-    static Properties properties;
+    static WebDriverWait wait;
     static SoftAssert softAssert;
 
     static String fullName = "Test";
@@ -34,20 +29,12 @@ public class TextBox {
     static By actualResultEmail = By.id("email");
     static By actualResultAddress = By.xpath("//p[@id='currentAddress']");
 
-    @Before
-    public void before(){
-        properties = ConfigReader.initialize_Properties();
-        driver = DriverUtils.initialize_Driver();
-    }
-    @After
-    public void after(){
-        driver.quit();
-    }
-
     public TextBox(WebDriver driver) {
         this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
     }
     public void homePage() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(homePage));
         softAssert.assertTrue(driver.findElement(homePage).isDisplayed());
         System.out.println("User At Home Page");
     }

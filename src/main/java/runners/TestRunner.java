@@ -3,8 +3,6 @@ package runners;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-public class TestRunner {
-
     @CucumberOptions(
             features = {"src/test/java/features"},
             glue = {"stepDefinitions","utils"},
@@ -12,8 +10,6 @@ public class TestRunner {
             monochrome = true
     )
 
-    public class Runner extends AbstractTestNGCucumberTests {
+    public class TestRunner extends AbstractTestNGCucumberTests {
 
     }
-
-}
