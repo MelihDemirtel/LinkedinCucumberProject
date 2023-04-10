@@ -9,6 +9,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "I am on the demoqa home page",
   "keyword": "Given "
@@ -17,8 +20,7 @@ formatter.match({
   "location": "StepDefinitions.iAmOnTheDemoqaHomePage()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat pages.TextBox.homePage(TextBox.java:51)\r\n\tat stepDefinitions.StepDefinitions.iAmOnTheDemoqaHomePage(StepDefinitions.java:22)\r\n\tat ✽.I am on the demoqa home page(file:src/test/java/features/TextBox.feature:7)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user click elements page",
@@ -28,7 +30,7 @@ formatter.match({
   "location": "StepDefinitions.userClickElementsPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user click text box page",
@@ -38,7 +40,7 @@ formatter.match({
   "location": "StepDefinitions.userClickTextBoxPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user write full name",
@@ -48,7 +50,7 @@ formatter.match({
   "location": "StepDefinitions.userWriteFullName()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user write email",
@@ -58,7 +60,7 @@ formatter.match({
   "location": "StepDefinitions.userWriteEmail()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user write current address",
@@ -68,7 +70,7 @@ formatter.match({
   "location": "StepDefinitions.userWriteCurrentAddress()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user click submit",
@@ -78,7 +80,7 @@ formatter.match({
   "location": "StepDefinitions.userClickSubmit()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user check information",
@@ -88,6 +90,9 @@ formatter.match({
   "location": "StepDefinitions.userCheckInformation()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 });

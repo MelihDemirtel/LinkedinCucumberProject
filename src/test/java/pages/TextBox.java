@@ -1,9 +1,11 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
@@ -11,7 +13,7 @@ import java.time.Duration;
 public class TextBox {
     static WebDriver driver;
     static WebDriverWait wait;
-    static SoftAssert softAssert;
+    static JavascriptExecutor jsx;
 
     static String fullName = "Test";
     static String email = "test@deneme.com";
@@ -32,10 +34,11 @@ public class TextBox {
     public TextBox(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        this.jsx = (JavascriptExecutor) driver;
     }
     public void homePage() {
+        jsx.executeScript("window.scrollBy(0,300)");
         wait.until(ExpectedConditions.presenceOfElementLocated(homePage));
-        softAssert.assertTrue(driver.findElement(homePage).isDisplayed());
         System.out.println("User At Home Page");
     }
     public void clickElements(){
@@ -54,18 +57,18 @@ public class TextBox {
         driver.findElement(currentAddressLabel).sendKeys(currentAddress);
     }
     public void clickSubmit(){
+        jsx.executeScript("window.scrollBy(0,300)");
         driver.findElement(submitButton).click();
     }
     public void assertInfo(){
-        softAssert.assertEquals(driver.findElement(actualResultName).getText(), "Name:"+fullName);
+        jsx.executeScript("window.scrollBy(0,400)");
+        Assert.assertEquals(driver.findElement(actualResultName).getText(), "Name:"+fullName);
         System.out.println("User Checked Full Name | " + driver.findElement(actualResultName).getText());
 
-        softAssert.assertEquals(driver.findElement(actualResultEmail).getText(), "Email:"+email);
-        System.out.println("User Checked Full Name | " + driver.findElement(actualResultEmail).getText());
+        Assert.assertEquals(driver.findElement(actualResultEmail).getText(), "Email:"+email);
+        System.out.println("User Checked Email | " + driver.findElement(actualResultEmail).getText());
 
-        softAssert.assertEquals(driver.findElement(actualResultAddress).getText(), "Current Address :"+currentAddress);
-        System.out.println("User Checked Full Name | " + driver.findElement(actualResultAddress).getText());
-
-        softAssert.assertAll();
+        Assert.assertEquals(driver.findElement(actualResultAddress).getText(), "Current Address :"+currentAddress);
+        System.out.println("User Checked Current Address | " + driver.findElement(actualResultAddress).getText());
     }
 }

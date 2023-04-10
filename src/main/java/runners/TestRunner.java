@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
             features = {"src/test/java/features"},
             glue = {"stepDefinitions","utils"},
             plugin = {"summary","pretty", "html:target/cucumber-reports.html"},
+            dryRun = false,
             monochrome = true
     )
 
