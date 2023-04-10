@@ -19,5 +19,4 @@ public class Hooks {
     public void after(){
         driver.quit();
     }
-
 }
