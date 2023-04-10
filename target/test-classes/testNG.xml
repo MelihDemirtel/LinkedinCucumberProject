@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name ="LinkedinCucumberProject">
-    <test name ="AllTests">
+    <test name ="SmokeTest">
         <classes>
             <class name ="runners.TestRunner"/>
         </classes>
