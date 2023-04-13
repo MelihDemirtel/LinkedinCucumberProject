@@ -66,4 +66,28 @@ public class StepDefinitions {
     public void userCheckedBoxes() {
         checkBox.assertInfo();
     }
+
+    @And("user click radio button page")
+    public void userClickRadioButtonPage() {
+    }
+
+    @And("user click yes button")
+    public void userClickYesButton() {
+    }
+
+    @Then("user check messages")
+    public void userCheckMessages() {
+    }
+
+    @And("user click impressive button")
+    public void userClickImpressiveButton() {
+    }
+
+    @And("user tries to click no button")
+    public void userTriesToClickNoButton() {
+    }
+
+    @Then("user sees that the button cannot be clicked")
+    public void userSeesThatTheButtonCannotBeClicked() {
+    }
 }
