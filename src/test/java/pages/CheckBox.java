@@ -18,17 +18,13 @@ public class CheckBox extends WebElements{
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         this.jsx = (JavascriptExecutor) driver;
     }
-
     public void clickCheckBox(){
-
         wait.until(ExpectedConditions.presenceOfElementLocated(checkBoxButton));
         driver.findElement(checkBoxButton).click();
     }
-
     public void clickHomeCheckBox(){
         driver.findElement(homeCheckBoxButton).click();
     }
-
     public void assertInfo(){
         Assert.assertTrue(driver.findElement(actualResult).isDisplayed());
         System.out.println(driver.findElement(actualResult).getText());
