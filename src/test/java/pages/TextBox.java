@@ -18,7 +18,7 @@ public class TextBox extends WebElements {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         this.jsx = (JavascriptExecutor) driver;
     }
-   
+
     public void clickTextBox(){
         wait.until(ExpectedConditions.presenceOfElementLocated(textBoxButton));
         driver.findElement(textBoxButton).click();
