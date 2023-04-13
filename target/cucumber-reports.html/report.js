@@ -152,11 +152,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user check messages",
+  "name": "user check yes messages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitions.userCheckMessages()"
+  "location": "StepDefinitions.userCheckYesMessages()"
 });
 formatter.result({
   "status": "passed"
@@ -172,15 +172,14 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user check messages",
+  "name": "user check impressive messages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitions.userCheckMessages()"
+  "location": "StepDefinitions.userCheckImpressiveMessages()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected [Yes] but found [Impressive]\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:137)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:453)\r\n\tat org.testng.Assert.assertEquals(Assert.java:463)\r\n\tat pages.RadioButton.checkYesMessages(RadioButton.java:40)\r\n\tat stepDefinitions.StepDefinitions.userCheckMessages(StepDefinitions.java:84)\r\n\tat ✽.user check messages(file:src/test/java/features/RadioButton.feature:15)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user tries to click no button",
@@ -190,7 +189,7 @@ formatter.match({
   "location": "StepDefinitions.userTriesToClickNoButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user sees that the button cannot be clicked",
@@ -200,7 +199,7 @@ formatter.match({
   "location": "StepDefinitions.userSeesThatTheButtonCannotBeClicked()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"
