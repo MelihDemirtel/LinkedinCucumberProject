@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SmokeTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 10 14:30:16 EET 2023</td>
+<td>Started on:</td><td>Thu Apr 13 15:04:35 EET 2023</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19001 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41175 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,34 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click Radio Buttons", "RadioButton"</td>
+<td><div><pre>java.lang.AssertionError: expected [Yes] but found [Impressive]
+	at pages.RadioButton.checkYesMessages(RadioButton.java:40)
+	at stepDefinitions.StepDefinitions.userCheckMessages(StepDefinitions.java:84)
+	at ✽.user check messages(file:src/test/java/features/RadioButton.feature:15)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1735962278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1735962278'><pre>java.lang.AssertionError: expected [Yes] but found [Impressive]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at pages.RadioButton.checkYesMessages(RadioButton.java:40)
+	at stepDefinitions.StepDefinitions.userCheckMessages(StepDefinitions.java:84)
+	at ✽.user check messages(file:src/test/java/features/RadioButton.feature:15)
+</pre></div></td>
+<td>8</td>
+<td>runners.TestRunner@128d2484</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -77,13 +105,13 @@ function toggleAllBoxes() {
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click Check Boxes", "CheckBox"</td>
 <td></td>
-<td>10</td>
-<td>runners.TestRunner@459e9125</td></tr>
+<td>21</td>
+<td>runners.TestRunner@128d2484</td></tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit to information of user", "TextBox"</td>
 <td></td>
-<td>8</td>
-<td>runners.TestRunner@459e9125</td></tr>
+<td>10</td>
+<td>runners.TestRunner@128d2484</td></tr>
 </table><p>
 </body>
 </html>

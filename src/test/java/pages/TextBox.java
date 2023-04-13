@@ -27,9 +27,11 @@ public class TextBox extends WebElements {
         driver.findElement(elementsButton).click();
     }
     public void clickTextBox(){
+        wait.until(ExpectedConditions.presenceOfElementLocated(textBoxButton));
         driver.findElement(textBoxButton).click();
     }
     public void sendFullName(){
+        wait.until(ExpectedConditions.presenceOfElementLocated(fullNameLabel));
         driver.findElement(fullNameLabel).sendKeys(fullName);
     }
     public void sendEmail(){
@@ -44,6 +46,7 @@ public class TextBox extends WebElements {
     }
     public void assertInfo(){
         jsx.executeScript("window.scrollBy(0,400)");
+        wait.until(ExpectedConditions.presenceOfElementLocated(actualResultName));
         Assert.assertEquals(driver.findElement(actualResultName).getText(), "Name:"+fullName);
         System.out.println("User Checked Full Name | " + driver.findElement(actualResultName).getText());
 

@@ -71,25 +71,36 @@ public class StepDefinitions {
 
     @And("user click radio button page")
     public void userClickRadioButtonPage() {
+        radioButton.radioButton();
     }
 
     @And("user click yes button")
     public void userClickYesButton() {
+        radioButton.clickYesRadioButton();
     }
 
-    @Then("user check messages")
-    public void userCheckMessages() {
+    @Then("user check yes messages")
+    public void userCheckYesMessages() {
+        radioButton.checkYesMessages();
     }
 
     @And("user click impressive button")
     public void userClickImpressiveButton() {
+        radioButton.clickImpressiveRadioButton();
+    }
+
+    @Then("user check impressive messages")
+    public void userCheckImpressiveMessages() {
+        radioButton.checkImpressiveMessages();
     }
 
     @And("user tries to click no button")
     public void userTriesToClickNoButton() {
+        radioButton.clickNoRadioButton();
     }
 
     @Then("user sees that the button cannot be clicked")
     public void userSeesThatTheButtonCannotBeClicked() {
+        radioButton.checkNoRadioButtonEnabled();
     }
 }

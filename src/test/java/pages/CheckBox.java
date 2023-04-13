@@ -29,6 +29,8 @@ public class CheckBox extends WebElements{
     }
 
     public void clickCheckBox(){
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(checkBoxButton));
         driver.findElement(checkBoxButton).click();
     }
 

@@ -10,8 +10,8 @@ Feature: RadioButton
     And user click elements page
     And user click radio button page
     And user click yes button
-    Then user check messages
+    Then user check yes messages
     And user click impressive button
-    Then user check messages
+    Then user check impressive messages
     And user tries to click no button
     Then user sees that the button cannot be clicked

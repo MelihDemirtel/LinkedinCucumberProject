@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [LinkedinCucumberProject]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="TextBox(failed)">
+  <test thread-count="5" name="SmokeTest(failed)">
     <classes>
       <class name="runners.TestRunner">
         <methods>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="1"/>
           <include name="tearDownClass"/>
           <include name="setUpClass"/>
         </methods>
       </class> <!-- runners.TestRunner -->
     </classes>
-  </test> <!-- TextBox(failed) -->
+  </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [LinkedinCucumberProject] -->
