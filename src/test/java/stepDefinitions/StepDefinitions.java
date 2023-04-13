@@ -16,6 +16,7 @@ public class StepDefinitions {
     CheckBox checkBox = new CheckBox(driver);
     RadioButton radioButton = new RadioButton(driver);
 
+    //TextBox
     @Given("I am on the demoqa home page")
     public void iAmOnTheDemoqaHomePage() {
         textBox.homePage();
@@ -56,6 +57,7 @@ public class StepDefinitions {
         textBox.assertInfo();
     }
 
+    //CheckBox
     @And("user click check box page")
     public void userClickCheckBoxPage() { checkBox.clickCheckBox();
     }
@@ -69,15 +71,12 @@ public class StepDefinitions {
         checkBox.assertInfo();
     }
 
+    //RadioButton
     @And("user click radio button page")
-    public void userClickRadioButtonPage() {
-        radioButton.radioButton();
-    }
+    public void userClickRadioButtonPage() { radioButton.radioButton(); }
 
     @And("user click yes button")
-    public void userClickYesButton() {
-        radioButton.clickYesRadioButton();
-    }
+    public void userClickYesButton() { radioButton.clickYesRadioButton(); }
 
     @Then("user check yes messages")
     public void userCheckYesMessages() {
