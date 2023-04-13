@@ -10,6 +10,8 @@ public class WebElements {
     static String expectedYesRadioButtonMessages = "Yes";
     static String expectedImpressiveRadioButtonMessages = "Impressive";
 
+    static boolean isClickableNoRadioButton;
+
     static By homePage = By.xpath("//div[@class='category-cards']");
     static By elementsButton = By.xpath("//h5[text()='Elements']");
     static By textBoxButton = By.xpath("//span[text()='Text Box']");

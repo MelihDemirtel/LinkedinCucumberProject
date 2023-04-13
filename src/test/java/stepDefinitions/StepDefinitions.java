@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pages.CheckBox;
+import pages.RadioButton;
 import pages.TextBox;
 import utils.DriverUtils;
 
@@ -13,6 +14,7 @@ public class StepDefinitions {
     WebDriver driver = DriverUtils.getDriver();
     TextBox textBox = new TextBox(driver) ;
     CheckBox checkBox = new CheckBox(driver);
+    RadioButton radioButton = new RadioButton(driver);
 
     @Given("I am on the demoqa home page")
     public void iAmOnTheDemoqaHomePage() {
