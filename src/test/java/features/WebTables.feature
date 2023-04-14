@@ -5,7 +5,7 @@ Feature: WebTables
   I want to add my information in the web table
   So that I can write my information in registration form
 
-  Scenario: Submit to registration form
+  Scenario: Scenario-1 Submit to registration form
     Given I am on the demoqa home page
     And user click elements page
     And user click web tables

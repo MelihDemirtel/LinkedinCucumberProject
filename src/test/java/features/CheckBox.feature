@@ -5,7 +5,7 @@ Feature: CheckBox
   I want to click check boxes
   So that I can see boxes
 
-  Scenario: Click Check Boxes
+  Scenario: Scenario-1 Click Check Boxes
     Given I am on the demoqa home page
     And user click elements page
     And user click check box page

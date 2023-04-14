@@ -46,6 +46,7 @@ public class WebElements {
     static String registrationFormDepartment = "Test Department";
     static boolean isDisplayedWebTablesFifthRow;
     static By webTablesAddButton = By.id("addNewRecordButton");
+    static By webTablesRegistrationForm = By.id("userForm");
     static By registrationFormFirstNameLabel = By.id("firstName");
     static By registrationFormLastNameLabel = By.id("lastName");
     static By registrationFormUserEmailLabel = By.id("userEmail");

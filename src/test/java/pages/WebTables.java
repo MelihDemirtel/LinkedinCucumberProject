@@ -15,7 +15,7 @@ public class WebTables extends WebElements {
 
     public WebTables(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.jsx = (JavascriptExecutor) driver;
     }
     public void clickWebTables(){
@@ -24,10 +24,10 @@ public class WebTables extends WebElements {
     }
     public void clickAddButton(){
         wait.until(ExpectedConditions.presenceOfElementLocated(webTablesAddButton));
-        driver.findElement(webTablesAddButton);
+        driver.findElement(webTablesAddButton).click();
     }
     public void sendFirstName(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(registrationFormFirstNameLabel));
+        wait.until(ExpectedConditions.presenceOfElementLocated(webTablesRegistrationForm));
         driver.findElement(registrationFormFirstNameLabel).sendKeys(registrationFormFirstName);
     }
     public void sendLastName(){

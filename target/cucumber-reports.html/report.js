@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/features/CheckBox.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/features/WebTables.feature");
 formatter.feature({
-  "name": "CheckBox",
-  "description": "  As a user\n  I want to click check boxes\n  So that I can see boxes",
+  "name": "WebTables",
+  "description": "  As a user\n  I want to add my information in the web table\n  So that I can write my information in registration form",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@CheckBox"
+      "name": "@WebTables"
     },
     {
       "name": "@Smoke"
@@ -13,12 +13,12 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Click Check Boxes",
+  "name": "Scenario-1 Submit to registration form",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@CheckBox"
+      "name": "@WebTables"
     },
     {
       "name": "@Smoke"
@@ -49,267 +49,101 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click check box page",
+  "name": "user click web tables",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickCheckBoxPage()"
+  "location": "StepDefinitions.userClickWebTables()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click home check box",
+  "name": "user click add button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickHomeCheckBox()"
+  "location": "StepDefinitions.userClickAddButton()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user checked boxes",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.userCheckedBoxes()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("file:src/test/java/features/RadioButton.feature");
-formatter.feature({
-  "name": "RadioButton",
-  "description": "  As a user\n  I want to click radio buttons\n  So that I can see messages",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@RadioButton"
-    },
-    {
-      "name": "@Smoke"
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Click Radio Buttons",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@RadioButton"
-    },
-    {
-      "name": "@Smoke"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on the demoqa home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepDefinitions.iAmOnTheDemoqaHomePage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click elements page",
+  "name": "user send first name",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickElementsPage()"
+  "location": "StepDefinitions.userSendFirstName()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click radio button page",
+  "name": "user send last name",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickRadioButtonPage()"
+  "location": "StepDefinitions.userSendLastName()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click yes button",
+  "name": "user send email",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickYesButton()"
+  "location": "StepDefinitions.userSendEmail()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user check yes messages",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.userCheckYesMessages()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click impressive button",
+  "name": "user send age",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickImpressiveButton()"
+  "location": "StepDefinitions.userSendAge()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user check impressive messages",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.userCheckImpressiveMessages()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user tries to click no button",
+  "name": "user send salary",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userTriesToClickNoButton()"
+  "location": "StepDefinitions.userSendSalary()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user sees that the button cannot be clicked",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.userSeesThatTheButtonCannotBeClicked()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.uri("file:src/test/java/features/TextBox.feature");
-formatter.feature({
-  "name": "TextBox",
-  "description": "  As a user\n  I want to submit information form\n  So that I can write my information",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@TextBox"
-    },
-    {
-      "name": "@Smoke"
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Submit to information of user",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@TextBox"
-    },
-    {
-      "name": "@Smoke"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on the demoqa home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepDefinitions.iAmOnTheDemoqaHomePage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click elements page",
+  "name": "user send department",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickElementsPage()"
+  "location": "StepDefinitions.userSendDepartment()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click text box page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userClickTextBoxPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user write full name",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userWriteFullName()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user write email",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userWriteEmail()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user write current address",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userWriteCurrentAddress()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click submit",
+  "name": "user click submit button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickSubmit()"
+  "location": "StepDefinitions.userClickSubmitButton()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user check information",
+  "name": "user check last row in the table",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitions.userCheckInformation()"
+  "location": "StepDefinitions.userCheckLastRowInTheTable()"
 });
 formatter.result({
   "status": "passed"

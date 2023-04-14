@@ -5,7 +5,7 @@ Feature: RadioButton
   I want to click radio buttons
   So that I can see messages
 
-  Scenario: Click Radio Buttons
+  Scenario: Scenario-1 Click Radio Buttons
     Given I am on the demoqa home page
     And user click elements page
     And user click radio button page
