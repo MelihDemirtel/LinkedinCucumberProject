@@ -5,10 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import pages.CheckBox;
-import pages.ElementsPagesBackground;
-import pages.RadioButton;
-import pages.TextBox;
+import pages.*;
 import utils.DriverUtils;
 
 public class StepDefinitions {
@@ -17,7 +14,9 @@ public class StepDefinitions {
     TextBox textBox = new TextBox(driver) ;
     CheckBox checkBox = new CheckBox(driver);
     RadioButton radioButton = new RadioButton(driver);
+    WebTables webTables = new WebTables(driver);
 
+    //-----------------------------------------------------------------------------------------------------
     //TextBox
     @Given("I am on the demoqa home page")
     public void iAmOnTheDemoqaHomePage() {
@@ -59,6 +58,7 @@ public class StepDefinitions {
         textBox.assertInfo();
     }
 
+    //-----------------------------------------------------------------------------------------------------
     //CheckBox
     @And("user click check box page")
     public void userClickCheckBoxPage() { checkBox.clickCheckBox();
@@ -73,6 +73,7 @@ public class StepDefinitions {
         checkBox.assertInfo();
     }
 
+    //-----------------------------------------------------------------------------------------------------
     //RadioButton
     @And("user click radio button page")
     public void userClickRadioButtonPage() { radioButton.radioButton(); }
@@ -105,43 +106,35 @@ public class StepDefinitions {
         radioButton.checkNoRadioButtonEnabled();
     }
 
+    //-----------------------------------------------------------------------------------------------------
+    //WebTables
     @And("user click web tables")
-    public void userClickWebTables() {
-    }
+    public void userClickWebTables() { webTables.clickWebTables(); }
 
     @And("user click add button")
-    public void userClickAddButton() {
-    }
+    public void userClickAddButton() { webTables.clickAddButton(); }
 
     @And("user send first name")
-    public void userSendFirstName() {
-    }
+    public void userSendFirstName() { webTables.sendFirstName(); }
 
     @And("user send last name")
-    public void userSendLastName() {
-    }
+    public void userSendLastName() { webTables.sendLastName(); }
 
     @And("user send email")
-    public void userSendEmail() {
-    }
+    public void userSendEmail() { webTables.sendEmail(); }
 
     @And("user send age")
-    public void userSendAge() {
-    }
+    public void userSendAge() { webTables.sendAge(); }
 
     @And("user send salary")
-    public void userSendSalary() {
-    }
+    public void userSendSalary() { webTables.sendSalary(); }
 
     @And("user send department")
-    public void userSendDepartment() {
-    }
+    public void userSendDepartment() { webTables.sendDepartment(); }
 
     @When("user click submit button")
-    public void userClickSubmitButton() {
-    }
+    public void userClickSubmitButton() { webTables.clickSubmitButton(); }
 
     @Then("user check last row in the table")
-    public void userCheckLastRowInTheTable() {
-    }
+    public void userCheckLastRowInTheTable() { webTables.checkWebTable(); }
 }
