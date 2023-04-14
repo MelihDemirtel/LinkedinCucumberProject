@@ -1,9 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class WebElements {
 
@@ -11,6 +8,7 @@ public class WebElements {
     static By homePage = By.xpath("//div[@class='category-cards']");
     static By elementsButton = By.xpath("//h5[text()='Elements']");
     static By textBoxButton = By.xpath("//span[text()='Text Box']");
+    static By webTablesButton = By.xpath("//span[text()='Web Tables']");
 
     //TextBox
     static String fullName = "Test";
@@ -40,13 +38,13 @@ public class WebElements {
     static By actualRadioButtonMessages = By.xpath("//span[@class='text-success']");
 
     //WebTables
-    static String firstName = "Test";
-    static String lastName = "Deneme";
-    static String userEmail = "test@deneme.com";
-    static String age = "25";
-    static String salary = "12500";
-    static String department = "Test Department";
-    static boolean isEmptyWebTablesFifthRow;
+    static String registrationFormFirstName = "Test";
+    static String registrationFormLastName = "Deneme";
+    static String registrationFormUserEmail = "test@deneme.com";
+    static String registrationFormAge = "25";
+    static String registrationFormSalary = "12500";
+    static String registrationFormDepartment = "Test Department";
+    static boolean isDisplayedWebTablesFifthRow;
     static By webTablesAddButton = By.id("addNewRecordButton");
     static By registrationFormFirstNameLabel = By.id("firstName");
     static By registrationFormLastNameLabel = By.id("lastName");
