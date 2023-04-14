@@ -104,4 +104,44 @@ public class StepDefinitions {
     public void userSeesThatTheButtonCannotBeClicked() {
         radioButton.checkNoRadioButtonEnabled();
     }
+
+    @And("user click web tables")
+    public void userClickWebTables() {
+    }
+
+    @And("user click add button")
+    public void userClickAddButton() {
+    }
+
+    @And("user send first name")
+    public void userSendFirstName() {
+    }
+
+    @And("user send last name")
+    public void userSendLastName() {
+    }
+
+    @And("user send email")
+    public void userSendEmail() {
+    }
+
+    @And("user send age")
+    public void userSendAge() {
+    }
+
+    @And("user send salary")
+    public void userSendSalary() {
+    }
+
+    @And("user send department")
+    public void userSendDepartment() {
+    }
+
+    @When("user click submit button")
+    public void userClickSubmitButton() {
+    }
+
+    @Then("user check last row in the table")
+    public void userCheckLastRowInTheTable() {
+    }
 }
