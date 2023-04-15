@@ -44,6 +44,7 @@ public class WebElements {
     static String registrationFormAge = "25";
     static String registrationFormSalary = "12500";
     static String registrationFormDepartment = "Test Department";
+    static String expectedWebTablesFirstRowFirstColumnData = "Cierra";
     static boolean isDisplayedWebTablesFifthRow;
     static By webTablesAddButton = By.id("addNewRecordButton");
     static By webTablesRegistrationForm = By.id("userForm");
@@ -55,6 +56,8 @@ public class WebElements {
     static By registrationFormDepartmentLabel = By.id("department");
     static By registrationFormSubmitButton = By.id("submit");
     static By webTablesFifthRow = By.xpath("(//div[@role='row'])[5]");
+    static By actualWebTablesFirstRowFirstColumnLocator = By.xpath("(//div[@class='rt-td'])[1]");
+    static By webTablesFirstDeleteButton = By.id("delete-record-1");
 
 
 
