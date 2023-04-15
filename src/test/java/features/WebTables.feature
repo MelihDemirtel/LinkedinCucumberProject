@@ -22,5 +22,6 @@ Feature: WebTables
   Scenario: Scenario-2 Delete first row in the web table
     Given I am on the demoqa home page
     And user click elements page
+    And user click web tables
     When user click delete button
     Then user check first row in the table
