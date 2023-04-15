@@ -10,9 +10,9 @@ Bu projeyi çalıştırmak için aşağıdaki önkoşulların sağlanması gerek
 
 ## Kurulum
 Projenin kopyalanması:
-"""
+```
 git clone https://github.com/MelihDemirtel/LinkedinCucumberProject.git
-"""
+```
 
 
 ## Kullanım
@@ -20,9 +20,9 @@ Projenin kurulumundan sonra, aşağıdaki adımları izleyerek senaryoları çal
 
 1. Testleri çalıştırmak:
 ***src/test/resources/testNG.xml dizininden çalıştırabilirsiniz.*** Çalıştırmadan önce ***src/main/java/runners/TestRunner.java*** dizininden  
-"""
+```
 tags = {"@Smoke"}
-""" 
+```
 alanına çalıştırmak istediğiniz senaryo tag'ını doğru yazdığınıza emin olun.
 
 2. Test sonuçlarını görüntülemek için aşağıdaki dosyayı açın:
