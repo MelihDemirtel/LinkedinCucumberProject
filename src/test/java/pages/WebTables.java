@@ -19,6 +19,7 @@ public class WebTables extends WebElements {
         this.jsx = (JavascriptExecutor) driver;
     }
     public void clickWebTables(){
+        jsx.executeScript("window.scrollBy(0,250)");
         wait.until(ExpectedConditions.presenceOfElementLocated(webTablesButton));
         driver.findElement(webTablesButton).click();
     }
@@ -59,6 +60,20 @@ public class WebTables extends WebElements {
         }else{
             System.out.println("Fifth Row is not added");
             Assert.assertFalse(isDisplayedWebTablesFifthRow);
+        }
+    }
+    public void clickDeleteButton(){
+        driver.findElement(webTablesFirstDeleteButton).click();
+    }
+    public void checkDeletedData(){
+        if (driver.findElement(actualWebTablesFirstRowFirstColumnLocator)
+                .equals(expectedWebTablesFirstRowFirstColumnData)){
+            System.out.println("Data is not deleted");
+            Assert.assertEquals
+                    (driver.findElement(actualWebTablesFirstRowFirstColumnLocator),
+                            expectedWebTablesFirstRowFirstColumnData);
+        }else{
+            System.out.println("Data is deleted");
         }
     }
 }
