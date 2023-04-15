@@ -107,7 +107,7 @@ public class StepDefinitions {
     }
 
     //-----------------------------------------------------------------------------------------------------
-    //WebTables
+    //WebTables - Scenario-1
     @And("user click web tables")
     public void userClickWebTables() { webTables.clickWebTables(); }
 
@@ -137,4 +137,13 @@ public class StepDefinitions {
 
     @Then("user check last row in the table")
     public void userCheckLastRowInTheTable() { webTables.checkWebTable(); }
+
+    //WebTables - Scenario-2
+    @When("user click delete button")
+    public void userClickDeleteButton() {
+    }
+
+    @Then("user check first row in the table")
+    public void userCheckFirstRowInTheTable() {
+    }
 }
