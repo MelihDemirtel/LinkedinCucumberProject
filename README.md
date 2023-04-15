@@ -10,19 +10,25 @@ Bu projeyi çalıştırmak için aşağıdaki önkoşulların sağlanması gerek
 
 ## Kurulum
 Projenin kopyalanması:
-'git clone https://github.com/MelihDemirtel/LinkedinCucumberProject.git'
+'''
+git clone https://github.com/MelihDemirtel/LinkedinCucumberProject.git
+'''
 
 
 ## Kullanım
 Projenin kurulumundan sonra, aşağıdaki adımları izleyerek senaryoları çalıştırabilirsiniz:
 
 1. Testleri çalıştırmak:
-'mvn test'
+***src/test/resources/testNG.xml dizininden çalıştırabilirsiniz.*** Çalıştırmadan önce ***src/main/java/runners/TestRunner.java*** dizininden  
+'''
+tags = {"@Smoke"}
+''' 
+alanına çalıştırmak istediğiniz senaryo tag'ını doğru yazdığınıza emin olun.
 
 2. Test sonuçlarını görüntülemek için aşağıdaki dosyayı açın:
-'target/cucumber-reports/cucumber-pretty/index.html'
+***test-output/LinkedinCucumberProject/SmokeTest.html*** "SmokeTest.html" Son kısım testNG.xml dosyasında yazdığınız ***test name ="SmokeTest"*** alanına göre değişir.
 
-##Senaryolar
+## Senaryolar
 
 Bu projede [Demoqa-Elements](https://demoqa.com/elements) sayfasında yer alan senaryolar yer almaktadır:
 
