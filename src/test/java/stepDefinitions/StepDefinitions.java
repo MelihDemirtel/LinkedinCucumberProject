@@ -141,9 +141,11 @@ public class StepDefinitions {
     //WebTables - Scenario-2
     @When("user click delete button")
     public void userClickDeleteButton() {
+        webTables.clickDeleteButton();
     }
 
     @Then("user check first row in the table")
     public void userCheckFirstRowInTheTable() {
+        webTables.checkDeletedData();
     }
 }
