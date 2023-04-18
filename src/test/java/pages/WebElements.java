@@ -59,6 +59,17 @@ public class WebElements {
     static By actualWebTablesFirstRowFirstColumnLocator = By.xpath("(//div[@class='rt-td'])[1]");
     static By webTablesFirstDeleteButton = By.id("delete-record-1");
 
+    //Buttons
+    static String expectedDoubleClickMessage = "You have done a double click";
+    static String expectedRightClickMessage = "You have done a right click";
+    static String expectedClickMeMessage = "You have done a dynamic click";
+    static By actualDoubleClickMessage = By.id("doubleClickMessage");
+    static By actualRightClickMessage = By.id("rightClickMessage");
+    static By actualClickMeMessage = By.id("dynamicClickMessage");
+    static By doubleClickBtn = By.id("doubleClickBtn");
+    static By rightClickBtn = By.id("rightClickBtn");
+    static By dynamicClickBtn = By.xpath("//button[text()='Click Me']");
+
 
 
 
