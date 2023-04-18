@@ -69,7 +69,7 @@ public class WebElements {
     static By actualClickMeMessage = By.id("dynamicClickMessage");
     static By doubleClickBtn = By.id("doubleClickBtn");
     static By rightClickBtn = By.id("rightClickBtn");
-    static By dynamicClickBtn = By.xpath("//button[text()='Click Me']");
+    static By dynamicClickBtn = By.xpath("(//button[@type='button'])[4]");
 
 
 

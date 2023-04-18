@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/features/WebTables.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/java/features/Buttons.feature");
 formatter.feature({
-  "name": "WebTables",
-  "description": "  As a user\n  I want to add my information and remove my information in the web table\n  So that I can write my information in registration form and delete my information",
+  "name": "Buttons",
+  "description": "  As a user\n  I want to click buttons\n  So that I can see messages",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@WebTables"
+      "name": "@Buttons"
     },
     {
       "name": "@Smoke"
@@ -13,12 +13,12 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "Scenario-1 Submit to registration form",
+  "name": "Scenario-1 Click Buttons",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@WebTables"
+      "name": "@Buttons"
     },
     {
       "name": "@Smoke"
@@ -49,170 +49,51 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click web tables",
+  "name": "user click buttons page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickWebTables()"
+  "location": "StepDefinitions.userClickButtonsPage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click add button",
+  "name": "user click double click me button with left mouse click twice",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userClickAddButton()"
+  "location": "StepDefinitions.userClickDoubleClickMeButtonWithLeftMouseClickTwice()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user send first name",
+  "name": "user click right click me button with right mouse click once",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userSendFirstName()"
+  "location": "StepDefinitions.userClickRightClickMeButtonWithRightMouseClickOnce()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user send last name",
+  "name": "user click click me button with left mouse click once",
   "keyword": "And "
 });
 formatter.match({
-  "location": "StepDefinitions.userSendLastName()"
+  "location": "StepDefinitions.userClickClickMeButtonWithLeftMouseClickOnce()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user send email",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userSendEmail()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user send age",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userSendAge()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user send salary",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userSendSalary()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user send department",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userSendDepartment()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click submit button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinitions.userClickSubmitButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user check last row in the table",
+  "name": "user checked messages",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinitions.userCheckLastRowInTheTable()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Scenario-2 Delete first row in the web table",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@WebTables"
-    },
-    {
-      "name": "@Smoke"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I am on the demoqa home page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "StepDefinitions.iAmOnTheDemoqaHomePage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click elements page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userClickElementsPage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click web tables",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepDefinitions.userClickWebTables()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user click delete button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "StepDefinitions.userClickDeleteButton()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user check first row in the table",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "StepDefinitions.userCheckFirstRowInTheTable()"
+  "location": "StepDefinitions.userCheckedMessages()"
 });
 formatter.result({
   "status": "passed"
