@@ -154,21 +154,26 @@ public class StepDefinitions {
     //Buttons - Scenario-1
     @And("user click buttons page")
     public void userClickButtonsPage() {
+        buttons.clickButtons();
     }
 
     @And("user click double click me button with left mouse click twice")
     public void userClickDoubleClickMeButtonWithLeftMouseClickTwice() {
+        buttons.clickDoubleClickButton();
     }
 
     @And("user click right click me button with right mouse click once")
     public void userClickRightClickMeButtonWithRightMouseClickOnce() {
+        buttons.clickRightClickButton();
     }
 
     @And("user click click me button with left mouse click once")
     public void userClickClickMeButtonWithLeftMouseClickOnce() {
+        buttons.clickClickMeButton();
     }
 
     @Then("user checked messages")
     public void userCheckedMessages() {
+        buttons.checkButtonsMessages();
     }
 }

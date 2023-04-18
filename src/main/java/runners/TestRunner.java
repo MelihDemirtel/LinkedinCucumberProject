@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
             tags = {"@Smoke"},
             plugin = {"summary","pretty", "html:target/cucumber-reports.html"},
             dryRun = false,
-            monochrome = true
+            monochrome = false
     )
 
     public class TestRunner extends AbstractTestNGCucumberTests {
