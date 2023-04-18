@@ -148,4 +148,26 @@ public class StepDefinitions {
     public void userCheckFirstRowInTheTable() {
         webTables.checkDeletedData();
     }
+
+    //-----------------------------------------------------------------------------------------------------
+    //Buttons - Scenario-1
+    @And("user click buttons page")
+    public void userClickButtonsPage() {
+    }
+
+    @And("user click double click me button with left mouse click twice")
+    public void userClickDoubleClickMeButtonWithLeftMouseClickTwice() {
+    }
+
+    @And("user click right click me button with right mouse click once")
+    public void userClickRightClickMeButtonWithRightMouseClickOnce() {
+    }
+
+    @And("user click click me button with left mouse click once")
+    public void userClickClickMeButtonWithLeftMouseClickOnce() {
+    }
+
+    @Then("user checked messages")
+    public void userCheckedMessages() {
+    }
 }
