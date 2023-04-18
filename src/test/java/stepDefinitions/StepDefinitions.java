@@ -15,6 +15,7 @@ public class StepDefinitions {
     CheckBox checkBox = new CheckBox(driver);
     RadioButton radioButton = new RadioButton(driver);
     WebTables webTables = new WebTables(driver);
+    Buttons buttons = new Buttons(driver);
 
     //-----------------------------------------------------------------------------------------------------
     //TextBox

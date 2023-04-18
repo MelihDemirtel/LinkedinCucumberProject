@@ -9,6 +9,7 @@ public class WebElements {
     static By elementsButton = By.xpath("//h5[text()='Elements']");
     static By textBoxButton = By.xpath("//span[text()='Text Box']");
     static By webTablesButton = By.xpath("//span[text()='Web Tables']");
+    static By buttonsButton = By.xpath("//span[text()='Buttons']");
 
     //TextBox
     static String fullName = "Test";
